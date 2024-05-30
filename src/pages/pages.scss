@@ -1,0 +1,54 @@
+@import "../common.scss";
+
+//section-outlet
+.section-outlet{
+    .section-about{
+       .intro{
+            p{
+                font-size:1rem;
+                line-height: 1.7;  
+                margin:0 0 1rem 0;          
+            }
+       }
+       .item-container{
+            @extend .d-flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap:20px;
+            align-items: flex-start;
+            .item{
+                width:calc(50% - 20px);
+                background-color: var(--light-white-2);
+                border-radius: 1rem;
+                padding:1.25rem;
+                @extend .d-flex;
+                align-items: flex-start;
+                margin-bottom:10px;
+                &:nth-child(1),
+                &:nth-child(4){
+                    background-color: var(--light-white-3);                    
+                }
+                .icon{
+                    width:46px;
+                    margin-right:1rem;
+                    font-size:2rem;
+                    color:var(--purple);
+                }
+                .item-info{
+                    .title{
+                        font-size:1.25rem;
+                        color:var(--black);
+                        font-weight: 500;
+                        margin-bottom:.75rem;
+                    }
+                    p{
+                        margin:0;
+                        padding:0;
+                        font-size:1rem;
+                        line-height:2;
+                    }
+                }
+            }
+       }
+    }
+}
