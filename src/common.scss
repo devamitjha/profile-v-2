@@ -33,6 +33,7 @@ $roboto: "Roboto", sans-serif;
     --red-muted: #fd7590;
     --light-green: #6ab5b9;
     --purple: #c17ceb;
+    --purple-dark: #ca56f2;
     --fb: #1773ea;
     --twitter: #1c9cea;
     --insta: #e12a72;
@@ -46,29 +47,32 @@ $roboto: "Roboto", sans-serif;
     --heading-black: #0f172a;
     --body-text: #44566c;
     --border:#e3e3e3;
+    --progress-bg:#edf2f2;
 }
 
 /* Dark theme variables */
 body.dark-theme {
-    --theme-primary: #0a53b2;
+    --theme-primary: #1b74e4;
     --theme-secondary: #fa5252;
-    --red: #d82663;
-    --red-dark: #c2185c;
-    --red-muted: #e14a73;
-    --light-green: #559597;
-    --purple: #a145c9;
-    --fb: #1357a8;
-    --twitter: #1473b0;
-    --insta: #be1d60;
-    --linkedin: #103561;
-    --white: #181818;
-    --light-white: #232323;
-    --light-white-2: #2a2a2a;
-    --light-white-3: #2e2e2e;
-    --light-white-4: #333333;
-    --black: #fff;
-    --heading-black: #d1d5db;
-    --body-text: #e5e7eb;
+    --red: #e93b81;
+    --red-dark: #dd2476;
+    --red-muted: #fd7590;
+    --light-green: #6ab5b9;
+    --purple: #c17ceb;
+    --fb: #1773ea;
+    --twitter: #1c9cea;
+    --insta: #e12a72;
+    --linkedin: #144679;
+    --white: #fff;
+    --light-white: #f3f6f6;
+    --light-white-2: #f8fbfb;
+    --light-white-3: #fff4f4;
+    --light-white-4: #eef5fa;
+    --black: #000;
+    --heading-black: #0f172a;
+    --body-text: #44566c;
+    --border: #e3e3e3;
+    --border-dark:#b5b5b5;
 }
 $fb:#1773ea;
 $twitter:#1c9cea;
@@ -85,7 +89,7 @@ body {
     font-family: $popins;
     background-color:#eef5fa;
     &.light-theme{
-        background-color:#fff;
+        background-color:#eef5fa;
     }
     &.dark-theme {
         background-color: #000;
@@ -181,7 +185,7 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(var(--black), .5);
+    background-color: rgba(#000, .5);
     width: 100%;
     height: 100%;
     z-index: 10;

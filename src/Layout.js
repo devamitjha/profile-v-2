@@ -23,7 +23,7 @@ function Layout() {
                     </div>
                     <div className="section-outlet">
                         <Outlet />
-                    </div>
+                    </div>                   
                     <Footer />
                 </div>
             </div>

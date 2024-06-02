@@ -7,8 +7,8 @@ const Sidebar = () => {
                 <img src={process.env.PUBLIC_URL + "/images/amit.jpg"} alt="author" />
             </div>
             <div className="user-bio">
-                <div className="user-name">Monalisa Ashley</div>
-                <span className="designation">Ui/Ux Designer</span>
+                <div className="user-name">Amit Jha</div>
+                <span className="designation">Sr. Frontend Developer</span>
                 <div className="social">
                     <span className="icon fb">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -28,7 +28,7 @@ const Sidebar = () => {
             <div className="user-address">
                 <div className="item telephone">
                     <div className="icon">
-                        <i className="fa fa-mobile" aria-hidden="true"></i>                        
+                        <i className="fa fa-mobile" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Phone</span>
@@ -37,7 +37,7 @@ const Sidebar = () => {
                 </div>
                 <div className="item email">
                     <div className="icon">
-                        <i className="fa fa-mobile" aria-hidden="true"></i>                        
+                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Email</span>
@@ -46,7 +46,7 @@ const Sidebar = () => {
                 </div>
                 <div className="item location">
                     <div className="icon">
-                        <i className="fa fa-map-marker" aria-hidden="true"></i>                        
+                        <i className="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Location</span>
