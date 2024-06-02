@@ -14,7 +14,7 @@ const About = () => {
                 <div className="item-container">
                     <div className="item">
                         <div className="icon">
-                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            <i className="fa fa-desktop" aria-hidden="true"></i>
                         </div>
                         <div className="item-info">
                             <div className="title">Responsive Web Design</div>
@@ -23,7 +23,7 @@ const About = () => {
                     </div>
                     <div className="item">
                         <div className="icon">
-                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <i className="fa fa-code" aria-hidden="true"></i>
                         </div>
                         <div className="item-info">
                             <div className="title">JavaScript Frameworks</div>
@@ -32,7 +32,7 @@ const About = () => {
                     </div>
                     <div className="item">
                         <div className="icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i className="fa fa-cog" aria-hidden="true"></i>
                         </div>
                         <div className="item-info">
                             <div className="title">Performance Optimization</div>
@@ -42,7 +42,7 @@ const About = () => {
                     </div>
                     <div className="item">
                         <div className="icon">
-                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <i className="fa fa-mobile" aria-hidden="true"></i>
                         </div>
                         <div className="item-info">
                             <div className="title">User Interface Design</div>

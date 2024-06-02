@@ -7,7 +7,7 @@ const Resume = () => {
                 <h2 className="section-title">Resume<span></span></h2>
                 <div className="section-education">
                     <div className="education">
-                        <h3><span><i class="fa fa-book" aria-hidden="true"></i></span>Education</h3>
+                        <h3><span><i className="fa fa-book" aria-hidden="true"></i></span>Education</h3>
                         <div className="section-card">
                             <div className="card">
                                 <div className="card-subtitle">2021-2024</div>
@@ -27,7 +27,7 @@ const Resume = () => {
                         </div>
                     </div>
                     <div className="section-experience">
-                        <h3><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Experience</h3>
+                        <h3><span><i className="fa fa-briefcase" aria-hidden="true"></i></span>Experience</h3>
                         <div className="section-card">
                             <div className="card">
                                 <div className="card-subtitle">2021-2024</div>

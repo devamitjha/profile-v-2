@@ -4,7 +4,9 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Blog from "./pages/Blog"
 import Resume from "./pages/Resume"
-import PortfolioWithSuspense from "./pages/Portfolio"
+import PortfolioWithSuspense from "./pages/Portfolio";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="resume" element={<Resume />} />
           <Route path="portfolio" element={<PortfolioWithSuspense />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes >
     </>

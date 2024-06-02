@@ -6,6 +6,7 @@ export const Context = createContext();
 export const ContextProvider = ({ children }) => {
     const [theme, setTheme] = useState('light');
     const [open, setOpen] = useState(false);
+    const [openmenu, setOpenMenu] = useState(false);
 
     useEffect(() => {
         if (theme === 'dark') {
@@ -18,7 +19,7 @@ export const ContextProvider = ({ children }) => {
     }, [theme]);
 
     useEffect(() => {
-        if (open) {
+        if (open || openmenu) {
             document.body.classList.add('no-scroll');
         } else {
             document.body.classList.remove('no-scroll');
@@ -26,7 +27,20 @@ export const ContextProvider = ({ children }) => {
         return () => {
             document.body.classList.remove('no-scroll');
         };
-    }, [open]);
+    }, [open, openmenu]);
+
+    //window resize
+
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+    const handleResize = () => {
+        setWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+    }, []);
     
 
     const toggleTheme = () => {
@@ -41,8 +55,16 @@ export const ContextProvider = ({ children }) => {
         setOpen(false);
     };
 
+    const openMenu = () =>{
+        setOpenMenu(true);
+     };
+ 
+     const closeMenu = () =>{
+        setOpenMenu(false);
+     };
+
     return (
-        <Context.Provider value={{ theme, toggleTheme, open, openPopup, closePopup }}>
+        <Context.Provider value={{ theme, toggleTheme, open, openPopup, closePopup, width, openMenu, closeMenu, openmenu }}>
             {children}
         </Context.Provider>
     );

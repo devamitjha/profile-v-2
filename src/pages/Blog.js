@@ -26,16 +26,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -61,16 +61,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -96,16 +96,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -131,16 +131,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -166,16 +166,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -201,16 +201,16 @@ const Blog = () => {
                         <div className="card-social">
                             <div className="like-and-share">
                                 <div className="item like">
-                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    <i className="fa fa-heart-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                                 <div className="item comment">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <i className="fa fa-comment-o" aria-hidden="true"></i>
                                     <span>10</span>
                                 </div>
                             </div>
                             <div className="item save">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -218,13 +218,13 @@ const Blog = () => {
 
                 <div className="pagination">
                     <div className="item prev">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <i className="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
                     <div className="item active">1</div>
                     <div className="item">2</div>
                     <div className="item">3</div>
                     <div className="item next">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>

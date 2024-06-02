@@ -11,16 +11,16 @@ const Sidebar = () => {
                 <span className="designation">Sr. Frontend Developer</span>
                 <div className="social">
                     <span className="icon fb">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
                     </span>
                     <span className="icon twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
                     </span>
                     <span className="icon instagram">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
                     </span>
                     <span className="icon linkedin">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
