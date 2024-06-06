@@ -2,12 +2,12 @@
 import React from 'react';
 
 const Loading = (props) => {
-    const {title, repeateItem} = props
+    const { title, repeateItem } = props
     return (
         <div className="section-portfolio">
             <h2 className="section-title">{title}<span></span></h2>
             <div className="item-container">
-                {Array.from({ length:repeateItem }).map((_, index) => (
+                {Array.from({ length: repeateItem }).map((_, index) => (
                     <div className="blog-card" key={index}>
                         <div className="ph-item">
                             <div className="ph-col-12">

@@ -1,9 +1,11 @@
 import React from 'react';
 import PortfolioSlider from "../components/PortfolioSlider";
+import Animation from '../utils/Animation';
 
 const About = () => {
     return (
         <>
+            <Animation />
             <div className="section-about">
                 <h2 className="section-title">About<span></span></h2>
                 <div className="intro">
@@ -50,9 +52,9 @@ const About = () => {
                             <p>Used tools like Figma and Sketch for design and prototyping.</p>
                         </div>
                     </div>
-                </div>            
+                </div>
             </div>
-            <PortfolioSlider/>
+            <PortfolioSlider />
         </>
     )
 }

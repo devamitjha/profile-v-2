@@ -1,8 +1,10 @@
 import React from 'react'
+import Animation from '../utils/Animation'
 
 const Resume = () => {
     return (
         <>
+            <Animation />
             <div className="section-resume">
                 <h2 className="section-title">Resume<span></span></h2>
                 <div className="section-education">
