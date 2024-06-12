@@ -2,25 +2,25 @@ import React from 'react'
 
 const Sidebar = () => {
     return (
-        <>
+        <div style={{ "display": "block" }}>
             <div className="avatar">
                 <img src={process.env.PUBLIC_URL + "/images/amit.jpg"} alt="author" />
             </div>
             <div className="user-bio">
-                <div className="user-name">Monalisa Ashley</div>
-                <span className="designation">Ui/Ux Designer</span>
+                <div className="user-name">Amit Jha</div>
+                <span className="designation">Sr. Frontend Developer</span>
                 <div className="social">
                     <span className="icon fb">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
                     </span>
                     <span className="icon twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
                     </span>
                     <span className="icon instagram">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
                     </span>
                     <span className="icon linkedin">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
@@ -28,25 +28,25 @@ const Sidebar = () => {
             <div className="user-address">
                 <div className="item telephone">
                     <div className="icon">
-                        <i className="fa fa-mobile" aria-hidden="true"></i>                        
+                        <i className="fa fa-mobile" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Phone</span>
-                        <p>+91 9967175225</p>
+                        <p>+91 123456789</p>
                     </div>
                 </div>
                 <div className="item email">
                     <div className="icon">
-                        <i className="fa fa-mobile" aria-hidden="true"></i>                        
+                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Email</span>
-                        <p>amit.jha@candere.com</p>
+                        <p>email@email.com</p>
                     </div>
                 </div>
                 <div className="item location">
                     <div className="icon">
-                        <i className="fa fa-map-marker" aria-hidden="true"></i>                        
+                        <i className="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div className="label">
                         <span>Location</span>
@@ -63,7 +63,7 @@ const Sidebar = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 
