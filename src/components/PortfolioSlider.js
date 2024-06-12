@@ -14,7 +14,6 @@ const PortfolioSlider = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
-        speed: 3000,
         autoplaySpeed: 3000,
         cssEase: "linear",
         responsive: [
