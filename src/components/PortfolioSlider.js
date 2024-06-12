@@ -58,7 +58,7 @@ const PortfolioSlider = () => {
         };
   
       fetchVideos();
-    }, []);
+    }, [PLAYLIST_IDS]);
     return (
         <div className="slider-container">
             <h2 className="section-title">Recent Work</h2>
