@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useState, Suspense } from 'react';
 import axios from 'axios';
 import { formatDate } from '../components/FormateDate';
 import { AppContext } from '../context/Context';
