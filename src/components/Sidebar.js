@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sidebar = () => {
     return (
-        <div style={{ "display": "block" }}>
+        <div style={{ "display": "none" }}>
             <div className="avatar">
                 <img src={process.env.PUBLIC_URL + "/images/amit.jpg"} alt="author" />
             </div>
