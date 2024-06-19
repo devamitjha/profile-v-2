@@ -1,12 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { productAPI } from '../utils/productAPI';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToWishlist, removeWishlist } from '../redux/WishlistSlice';
 
 const ProductCategory = () => {
     const currency = { "code": "INR", "symbol": "₹" }
-    const addToWishlist = (item) => {
-        console.log(item);
+    const dispatch = useDispatch();
+    const wishlistItems = useSelector((state) => state.wishlist.items);
+    //if click same wishlist icon it will not fired
+    const isItemInWishlist = (productId) => {
+        return wishlistItems.some(item => item.product_id === productId);
     }
+
+    const toggleWishlist = (item) => {
+        if (isItemInWishlist(item.product_id)) {
+            dispatch(removeWishlist(item.product_id));
+        } else {
+            dispatch(addToWishlist(item));
+        }
+    }
+
+
     return (
         <div className="section-product-list">
             {
@@ -36,8 +51,8 @@ const ProductCategory = () => {
                                 </div>
                             </div>
                         </Link>
-                        <div className="wishlist" onClick={() => addToWishlist(item)}>
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <div className="wishlist" onClick={() => toggleWishlist(item)}>
+                            <i className={`fa ${isItemInWishlist(item.product_id) ? 'fa-heart' : 'fa-heart-o'}`} aria-hidden="true"></i>
                         </div>
                     </div>
                 ))

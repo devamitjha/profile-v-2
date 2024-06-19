@@ -1,10 +1,18 @@
 import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import Animation from '../utils/Animation';
+//import SingleAnimation from '../utils/SingleAnimation';
+import { useSelector } from 'react-redux';
+
+
+
 
 const Products = () => {
+    const wishlistCount = useSelector(state => state.wishlist.items);
+
     return (
         <>
+            {/* <SingleAnimation /> */}
             <Animation />
             <div className="section-inner-category">
                 <ul className="inner-category">
@@ -15,7 +23,7 @@ const Products = () => {
                 <div className="shop-item">
                     <div className="icon wishlist">
                         <i className="fa fa-heart-o" aria-hidden="true"></i>
-                        <span className="count">0</span>
+                        <span className="count">{wishlistCount.length}</span>
                     </div>
                     <div className="icon cart">
                         <i className="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -26,6 +34,7 @@ const Products = () => {
             <div className="section-product productMenu">
                 <Outlet />
             </div>
+
         </>
     )
 }

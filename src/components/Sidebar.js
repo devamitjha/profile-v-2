@@ -32,7 +32,7 @@ const Sidebar = () => {
                     </div>
                     <div className="label">
                         <span>Phone</span>
-                        <p>+91 123456789</p>
+                        <p>+91 9967175225</p>
                     </div>
                 </div>
                 <div className="item email">
@@ -41,7 +41,7 @@ const Sidebar = () => {
                     </div>
                     <div className="label">
                         <span>Email</span>
-                        <p>email@email.com</p>
+                        <p>amit.jha@candere.com</p>
                     </div>
                 </div>
                 <div className="item location">

@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation} from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -18,11 +18,14 @@ import ProductDetails from "./pages/ProductDetails";
 import ProductCart from "./pages/ProductCart";
 import PaymentMethod from "./pages/PaymentMethod";
 import ProtectedRoute from "./utils/ProtectedRoute";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const location = useLocation();
   const user = true;
   return (
     <>
+      <ToastContainer />
       <AnimatePresence mode="wait" initial={false}>
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Layout />}>
