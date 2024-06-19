@@ -36,9 +36,9 @@ const PortfolioSlider = () => {
     };
     const [videos, setVideos] = useState([]);
     const API_KEY = 'AIzaSyC-lScemTC3wraw7twyx7J1xiNetBUb-v0';
-    const PLAYLIST_IDS = ['PLtlw27LFl0AAqdzSWlCIeaUDM4z9OLolt', 'PLtlw27LFl0AAEnOB3U-qiQhhJx4yfW4k-', 'PLtlw27LFl0AAErBbDl6hfN375pCD4Zf_L', 'PLtlw27LFl0ACkxR5FujUm0WNB4DGLRk51'];
   
     useEffect(() => {
+         const PLAYLIST_IDS = ['PLtlw27LFl0AAqdzSWlCIeaUDM4z9OLolt', 'PLtlw27LFl0AAEnOB3U-qiQhhJx4yfW4k-', 'PLtlw27LFl0AAErBbDl6hfN375pCD4Zf_L', 'PLtlw27LFl0ACkxR5FujUm0WNB4DGLRk51'];
         const getRandomPlaylistId = () => {
             const randomIndex = Math.floor(Math.random() * PLAYLIST_IDS.length);
             return PLAYLIST_IDS[randomIndex];
@@ -58,7 +58,7 @@ const PortfolioSlider = () => {
         };
   
       fetchVideos();
-    }, [PLAYLIST_IDS]);
+    }, []);
     return (
         <div className="slider-container">
             <h2 className="section-title">Recent Work</h2>
