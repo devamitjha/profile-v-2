@@ -14,7 +14,9 @@ const ProductDetails = () => {
 
     };
     const { productName } = useParams();
-    const product = productAPI.find(item => item.ProductUrl === (productName + "/"));
+    const product = productAPI.find(item => item.productUrl === (productName + "/"));
+
+    console.log(product);
 
     const settings = {
         dots: false,
@@ -42,24 +44,24 @@ const ProductDetails = () => {
             <div className="section-product-details">
                 <div className="product-slider">
                     <div className="big-image">
-                        <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                        <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[0]}`} alt="earring" />
                     </div>
                     <div className="slider-container">
                         <Slider {...settings}>
                             <div className="thumb-item">
-                                <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                                <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[0]}`} alt="earring" />
                             </div>
                             <div className="thumb-item">
-                                <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                                <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[1]}`} alt="earring" />
                             </div>
                             <div className="thumb-item">
-                                <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                                <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[2]}`} alt="earring" />
                             </div>
                             <div className="thumb-item">
-                                <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                                <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[3]}`} alt="earring" />
                             </div>
                             <div className="thumb-item">
-                                <img src="https://www.candere.com/media/jewellery/images/ge00804_1.jpeg" alt="earring" />
+                                <img src={`https://photos.melorra.com/fit-in/515x515/dev/catalogue/images/${product.images.enlarged_images[4]}`} alt="earring" />
                             </div>
                         </Slider>
                     </div>

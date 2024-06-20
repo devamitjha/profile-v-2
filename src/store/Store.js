@@ -6,6 +6,7 @@ import ResponsiveReducer from "../redux/ResponsiveSlice";
 import WishlistReducer from '../redux/WishlistSlice';
 import localStorageMiddleware from '../utils/localStorageMiddleware';
 import { loadState } from '../utils/loadState';
+import CurrentCategoryReducer from '../redux/CurrentCategory';
 
 
 const preloadedState = {
@@ -21,6 +22,7 @@ export const store = configureStore({
         popup: PopupReducer,
         responsive: ResponsiveReducer,
         wishlist: WishlistReducer,
+        currentCategory: CurrentCategoryReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(localStorageMiddleware),
