@@ -39,6 +39,10 @@ const ProductDetails = () => {
 
     const currency = { "code": "INR", "symbol": "₹" }
 
+    const handleCustomize = () => {
+        console.log("customize btn clicked");
+    }
+
     return (
         <div className="product-section">
             <div className="section-product-details">
@@ -90,7 +94,24 @@ const ProductDetails = () => {
                         </div>
                     </div>
                     <div className="offer-section"><p>{product.discount_message}</p></div>
-                    <div className="customisation-selection">
+                    <div className="customisation-short-info" onClick={handleCustomize}>
+                        <div className="item size">
+                            <label>Size</label>
+                            <p>18(57.8mm)</p>
+                        </div>
+                        <div className="item metal">
+                            <label>Metal</label>
+                            <p>18 KT Two Tone Gold</p>
+                        </div>
+                        <div className="item diamond">
+                            <label>Diamond</label>
+                            <p>IJ SI</p>
+                        </div>
+                        <div className="item customize">
+                            <label>Customize</label>
+                        </div>
+                    </div>
+                    <div className="customisation-selection" style={{ "display": "none" }}>
                         <div className="size-selection">
                             <label for="gender">Select Ring Size</label>
                             <select name="gender">
@@ -118,7 +139,10 @@ const ProductDetails = () => {
                             <span>Platinum</span>
                         </div>
                     </div>
-                    <button onClick={() => goToCart(product)}>Add To Cart</button>
+                    <button className="atc" onClick={() => goToCart(product)}>
+                        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <label>Add To Cart</label>
+                    </button>
                 </div>
             </div>
             <div className="product-detailed-summary">
