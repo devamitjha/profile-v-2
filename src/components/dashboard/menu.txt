@@ -1,0 +1,37 @@
+Post:
+    All Posts
+        Title
+        Author
+        Categories
+        Tags
+        Status
+        Date
+        Views
+        Likes
+    Add New
+    Categories
+        Name
+        Slug
+        Parent
+        Description
+
+    Tags
+        Popular Tags
+        Add New Tags
+            Name
+            Slug
+            Desctiption
+            
+Media
+    Library
+    Add New
+Comments
+    All
+    Mine
+    Pending
+    Approved
+
+Users
+    All Users
+    Add New
+    Your Profile

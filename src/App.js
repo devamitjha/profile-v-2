@@ -20,6 +20,9 @@ import PaymentMethod from "./pages/PaymentMethod";
 import ProtectedRoute from "./utils/ProtectedRoute";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UserProfile from "./admin/UserProfile";
+import AddUser from "./admin/AddUser";
+import Admin_Layout from "./admin/Admin_Layout";
 function App() {
   const location = useLocation();
   const user = true;
@@ -56,6 +59,10 @@ function App() {
               <Route path="shop/checkout/payment" element={<PaymentMethod />} />
             </Route>
           </Route>
+          <Route path="admin" element={<Admin_Layout />}>
+            <Route index element={<UserProfile />} />
+            <Route path="adduser" element={<AddUser />} />
+          </Route>
         </Routes >
       </AnimatePresence>
     </>
@@ -64,7 +71,3 @@ function App() {
 
 export default App;
 
-
-<Route path="category" element={<Categories />}>
-  <Route path=":postId" element={<Post />} />
-</Route>
