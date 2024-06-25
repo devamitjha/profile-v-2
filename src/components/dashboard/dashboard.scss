@@ -1,0 +1,42 @@
+@import "../component.scss";
+
+.admin-nav{
+    display:block;  
+    padding:2rem 0; 
+    overflow-y: scroll;
+    height: 100%;
+    ul{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        width: 100%;        
+        li{
+            font-size:1rem;                     
+            @extend .d-flex;
+            //justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;    
+            div{
+                width:100%;
+                padding: 1.25rem 2rem;
+            }
+            &.active{
+               .active{
+                    background-color: var(--black);
+                    color: var(--white);
+               }
+            }       
+            ul{
+                margin-left:1rem;
+                display:none;
+                li{
+                    font-size:.85rem;
+                    padding:1rem;
+                }
+            }
+            +li{               
+                border-top:1px solid var(--black);
+            }
+        }
+    }
+}
