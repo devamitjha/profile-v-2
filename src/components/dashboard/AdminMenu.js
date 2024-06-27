@@ -1,48 +1,59 @@
-import React from 'react';
-import "./dashboard.scss";
+import React, { useState } from 'react';
+import './dashboard.scss';
+import { Link } from 'react-router-dom';
 
 const AdminMenu = () => {
+    const [activeMenu, setActiveMenu] = useState(null);
+
+    const handleMenuClick = (menu) => {
+        if (activeMenu === menu) {
+            setActiveMenu(null);
+        } else {
+            setActiveMenu(menu);
+        }
+    };
+
     return (
         <div className="admin-nav">
             <ul>
-                <li className="active">
-                    <div className="active">Post</div>
-                    <ul>
-                        <li>All Posts</li>
-                        <li>Add New</li>
-                        <li>Categories</li>
-                        <li>Tags</li>
-                    </ul>
+                <li className={activeMenu === 'post' ? 'active' : ''}>
+                    <div className="mainMenu" onClick={() => handleMenuClick('post')}>Post</div>
+                    {activeMenu === 'post' && (
+                        <div className="subMenu">
+                            <Link to="/admin/allposts">All Posts</Link>
+                            <Link to="/admin/addpost">Add New</Link>
+                            <Link to="/admin/categories">Categories</Link>
+                            <Link to="/admin/tags">Tags</Link>
+                        </div>
+                    )}
                 </li>
-                <li>
-                    <div>Media</div>
-                    <ul>
-                        <li>Library</li>
-                        <li>Add New</li>
-                    </ul>
+                <li className={activeMenu === 'media' ? 'active' : ''}>
+                    <div className="mainMenu" onClick={() => handleMenuClick('media')}>Media</div>
+                    {activeMenu === 'media' && (
+                        <div className="subMenu">
+                            <Link to="/admin/library">library</Link>
+                            <Link to="/admin/addmedia">Add New</Link>
+                        </div>
+                    )}
                 </li>
-                <li>
-                    <div>Comments</div>
-                    <ul>
-                        <li>All</li>
-                        <li>Mine</li>
-                        <li>Pending</li>
-                        <li>Approved</li>
-                    </ul>
-
+                <li className={activeMenu === 'comments' ? 'active' : ''}>
+                    <div className="mainMenu" onClick={() => handleMenuClick('comments')}>
+                        <Link to="/admin/comments">Comments</Link>
+                    </div>
                 </li>
-                <li>
-                    <div>Users</div>
-                    <ul>
-                        <li>All User</li>
-                        <li>Add New</li>
-                        <li>Your Profile</li>
-                    </ul>
-
+                <li className={activeMenu === 'users' ? 'active' : ''}>
+                    <div className="mainMenu" onClick={() => handleMenuClick('users')}>Users</div>
+                    {activeMenu === 'users' && (
+                        <div className="subMenu">
+                            <Link to="/admin/alluser">All User</Link>
+                            <Link to="/admin/adduser">Add New</Link>
+                            <Link to="/admin/profile">Your Profile</Link>
+                        </div>
+                    )}
                 </li>
             </ul>
         </div>
-    )
+    );
 }
 
-export default AdminMenu
+export default AdminMenu;

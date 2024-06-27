@@ -13,6 +13,7 @@ const Admin_Layout = () => {
         <AdminMenu />
       </div>
       <div className="section-admin-content">
+        <p>Dashboard</p>
         <div className="section-admin-outlet">
           <Outlet />
         </div>

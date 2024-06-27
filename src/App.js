@@ -20,9 +20,17 @@ import PaymentMethod from "./pages/PaymentMethod";
 import ProtectedRoute from "./utils/ProtectedRoute";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import UserProfile from "./admin/UserProfile";
-import AddUser from "./admin/AddUser";
+import UserProfile from "./admin/user/UserProfile";
 import Admin_Layout from "./admin/Admin_Layout";
+import AllPosts from "./admin/post/AllPosts";
+import AddPost from "./admin/post/AddPost";
+import PostCategories from "./admin/post/Categories";
+import Tags from "./admin/post/Tags";
+import MediaLibrary from "./admin/media/MediaLibrary";
+import AddMedia from "./admin/media/AddMedia";
+import Comments from "./admin/comment/Comments";
+import AllUser from "./admin/user/Allusers";
+import AddUser from "./admin/user/AddUser";
 function App() {
   const location = useLocation();
   const user = true;
@@ -60,8 +68,17 @@ function App() {
             </Route>
           </Route>
           <Route path="admin" element={<Admin_Layout />}>
-            <Route index element={<UserProfile />} />
+            <Route index element={<AllPosts />} />
+            <Route path="allposts" element={<AllPosts />} />
+            <Route path="addpost" element={<AddPost />} />
+            <Route path="categories" element={<PostCategories />} />
+            <Route path="tags" element={<Tags />} />
+            <Route path="library" element={<MediaLibrary />} />
+            <Route path="addmedia" element={<AddMedia />} />
+            <Route path="comments" element={<Comments />} />
+            <Route path="alluser" element={<AllUser />} />
             <Route path="adduser" element={<AddUser />} />
+            <Route path="profile" element={<UserProfile />} />
           </Route>
         </Routes >
       </AnimatePresence>
