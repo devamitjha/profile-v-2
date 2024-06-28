@@ -31,6 +31,7 @@ import AddMedia from "./admin/media/AddMedia";
 import Comments from "./admin/comment/Comments";
 import AllUser from "./admin/user/Allusers";
 import AddUser from "./admin/user/AddUser";
+import EditPost from "./admin/post/EditPost";
 function App() {
   const location = useLocation();
   const user = true;
@@ -71,6 +72,7 @@ function App() {
             <Route index element={<AllPosts />} />
             <Route path="allposts" element={<AllPosts />} />
             <Route path="addpost" element={<AddPost />} />
+            <Route path="editpost/:postId" element={<EditPost />} />
             <Route path="categories" element={<PostCategories />} />
             <Route path="tags" element={<Tags />} />
             <Route path="library" element={<MediaLibrary />} />
