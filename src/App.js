@@ -29,7 +29,7 @@ import Tags from "./admin/post/Tags";
 import MediaLibrary from "./admin/media/MediaLibrary";
 import AddMedia from "./admin/media/AddMedia";
 import Comments from "./admin/comment/Comments";
-import AllUser from "./admin/user/Allusers";
+import AllUser from "./admin/user/Alluser";
 import AddUser from "./admin/user/AddUser";
 import EditPost from "./admin/post/EditPost";
 function App() {

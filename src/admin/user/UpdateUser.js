@@ -1,13 +1,13 @@
 import React from 'react'
 
-const EditPost = () => {
+const UpdateUser = () => {
     const postData = (e) => {
         e.preventDefault();
         alert("data posted");
     }
     return (
         <div className="editPost">
-            <h2>Edit Post</h2>
+            <h2>Update User</h2>
             <form onSubmit={postData}>
                 <div className="input-container">
                     <label htmlFor="fname">Title</label>
@@ -40,4 +40,4 @@ const EditPost = () => {
     )
 }
 
-export default EditPost
+export default UpdateUser
