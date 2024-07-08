@@ -1,0 +1,42 @@
+@import "../../common.scss";
+.section-comment{
+    display:block;
+    width:100%;
+    margin:1rem 0;
+    .comment-action{
+        @extend .d-flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom:.5rem;
+        span{
+            @extend .d-flex;
+            padding:.2rem 1rem;
+            cursor: pointer;
+            font-size:.85rem;
+            +span{
+                border-left:1px solid var(--border);
+            }
+        }
+    }
+    .container-comment{
+        .comment-title{
+            cursor:pointer;
+            height:4rem;
+            position:relative;
+            p{
+                margin:0 0 1rem 0;
+            }
+            .post-action{
+                display:none;
+                position:absolute;
+                left:.5rem;
+                bottom:.5rem;
+            }
+            &:hover{
+                .post-action {
+                    display: block;
+                }
+            }
+        }
+    }
+}

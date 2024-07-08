@@ -243,3 +243,24 @@ a {
     background-color: var(--black);
     z-index: 2;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+
+td {
+    font-size: .85rem;
+}
